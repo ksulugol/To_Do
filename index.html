@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-  
+<div class="todo__wrapper">
+    <h1 class="todo__title">HIGH</h1>
+
+    <div class="todo__item todo__item--add">
+        <input class="todo__input todo__input--add" type="text" placeholder="Добавить важных дел">
+        <button class="todo__btn todo__btn--add" type="button"></button>
+    </div>
+
+    <h1 class="todo__title todo__title--low">LOW</h1>
+    <input class="todo__input todo__input--add" type="text" placeholder="Добавить">
+
+    <div class="todo__item todo__item--checkbox">
+        <label class="todo__label">
+            <input class="todo__checkbox" type="checkbox">
+            <span class="todo__span todo__span--fake"></span>
+            <span class="todo__span todo__span--text">Посмотреть ютубчик</span>
+        </label>
+    </div>
+
+</div>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
